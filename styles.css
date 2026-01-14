@@ -75,7 +75,6 @@ h1{font-size:clamp(30px,4vw,44px);line-height:1.08;margin:0 0 12px}
   padding:8px 10px;border-radius:999px;
 }
 
-.section{padding:34px 0}
 .section--alt{
   background: transparent;
   border: 0;

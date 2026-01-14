@@ -363,3 +363,13 @@ h2{
   .meta{ grid-template-columns: 1fr; }
 }
 
+
+.brand__logo{
+  height: 44px;
+  width: auto;
+  display:block;
+  object-fit:contain;
+  filter: saturate(.95) contrast(.95);
+  opacity: .95;
+}
+

@@ -1,88 +1,167 @@
+<!-- index.html (replace your current index.html with this) -->
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Ian’s Mobile Mechanic</title>
-    <meta name="description" content="Trusted mobile mechanic. Diagnostics, brakes, batteries, starting/charging, and more. Call/text for a quote." />
+    <meta name="description" content="Ian’s Mobile Mechanic — trusted mobile diagnostics and repairs in Chula Vista and surrounding areas." />
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
     <header class="top">
       <div class="wrap top__inner">
-        <div class="brand">
+        <a class="brand" href="#top" id="top">
           <div class="brand__mark" aria-hidden="true">IM</div>
-          <div>
+          <div class="brand__text">
             <div class="brand__name">Ian’s Mobile Mechanic</div>
-            <div class="brand__tag">Trusted • Mobile • Straightforward</div>
+            <div class="brand__tag">Chula Vista and surrounding areas</div>
           </div>
-        </div>
+        </a>
 
-        <div class="top__cta">
-          <a class="btn btn--primary" href="tel:+18583236041">Call</a>
-          <a class="btn btn--ghost" href="sms:+18583236041">Text</a>
-        </div>
+        <!-- ONE header CTA only -->
+        <a class="btn btn--primary" href="tel:+18583236041">Call / Text</a>
       </div>
     </header>
 
-   <main>
-  <section class="hero">
-    <div class="wrap">
-      <h1>Trusted mobile mechanic in Chula Vista.</h1>
-      <p class="lead">
-        Diagnostics, brakes, batteries, starting & charging.
-        Clear communication. Fair pricing. Mobile service.
-      </p>
-      <a class="btn btn--primary" href="tel:+18583236041">
-        Call or Text 858-323-6041
-      </a>
-    </div>
-  </section>
+    <main>
+      <section class="hero">
+        <div class="wrap hero__grid">
+          <div class="hero__copy">
+            <p class="eyebrow">Trusted • Mobile • Straightforward</p>
+            <h1>Clean diagnostics and repairs, without the runaround.</h1>
+            <p class="lead">
+              Check engine lights, no-starts, brakes, charging issues, and pre-purchase inspections.
+              Clear estimates before work starts.
+            </p>
 
-  <section class="section">
-    <div class="wrap">
-      <h2>Services</h2>
-      <ul class="list">
-        <li>Check engine light diagnostics</li>
-        <li>Brakes (pads & rotors)</li>
-        <li>No-start & battery issues</li>
-        <li>Alternator & charging systems</li>
-        <li>Sensors & basic tune-ups</li>
-        <li>Pre-purchase inspections</li>
-      </ul>
-    </div>
-  </section>
+            <!-- TWO total CTAs in hero: primary + secondary (not repeated elsewhere) -->
+            <div class="actions">
+              <a class="btn btn--primary" href="sms:+18583236041">Text for a quote</a>
+              <a class="btn btn--ghost" href="#services">View services</a>
+            </div>
 
-  <section class="section">
-    <div class="wrap">
-      <h2>How it works</h2>
-      <ol class="steps-simple">
-        <li>Text your vehicle year, make, model, and issue</li>
-        <li>Get a clear estimate before work starts</li>
-        <li>I come to you when possible</li>
-      </ol>
-    </div>
-  </section>
+            <div class="chips">
+              <span class="chip">Photos + scan notes</span>
+              <span class="chip">Up-front pricing</span>
+              <span class="chip">By appointment</span>
+            </div>
+          </div>
 
-  <section class="section contact-simple">
-    <div class="wrap">
-      <h2>Contact</h2>
-      <p class="lead">Chula Vista and surrounding areas</p>
+          <aside class="hero__panel">
+            <div class="panel">
+              <div class="panel__title">Quick details</div>
 
-      <div class="contact-actions">
-        <a class="btn btn--primary" href="tel:+18583236041">Call</a>
-        <a class="btn btn--ghost" href="sms:+18583236041">Text</a>
-      </div>
-    </div>
-  </section>
-</main>
+              <dl class="meta">
+                <dt>Service area</dt>
+                <dd>Chula Vista and surrounding areas</dd>
 
+                <dt>Phone</dt>
+                <dd><a class="link" href="tel:+18583236041">+1 (858) 323-6041</a></dd>
+
+                <dt>Best contact</dt>
+                <dd>Text is fastest for quotes</dd>
+              </dl>
+
+              <!-- No extra buttons here to avoid clutter -->
+              <p class="note">
+                Include: year/make/model, symptoms, and a photo of any dash light.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="services" class="section">
+        <div class="wrap">
+          <div class="section__head">
+            <h2>Services</h2>
+            <p class="sub">A focused list—ask if your job isn’t shown.</p>
+          </div>
+
+          <div class="cards">
+            <div class="card">
+              <div class="card__h">Diagnostics</div>
+              <div class="card__p">Check engine light, scan report, basic electrical checks.</div>
+            </div>
+            <div class="card">
+              <div class="card__h">Brakes</div>
+              <div class="card__p">Pads/rotors, grinding/squeaks, inspection.</div>
+            </div>
+            <div class="card">
+              <div class="card__h">Starting / Battery</div>
+              <div class="card__p">No-starts, weak battery, charging checks.</div>
+            </div>
+            <div class="card">
+              <div class="card__h">Charging System</div>
+              <div class="card__p">Alternator tests, belt checks, replacements when applicable.</div>
+            </div>
+            <div class="card">
+              <div class="card__h">Sensors / Tune-up</div>
+              <div class="card__p">Plugs/coils/sensors—diagnosis first.</div>
+            </div>
+            <div class="card">
+              <div class="card__h">Pre-purchase</div>
+              <div class="card__p">Quick scan + mechanical check before you buy.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--soft">
+        <div class="wrap">
+          <div class="section__head">
+            <h2>How it works</h2>
+            <p class="sub">Simple process, clear expectations.</p>
+          </div>
+
+          <div class="steps">
+            <div class="step">
+              <div class="step__n">1</div>
+              <div class="step__t">Text details</div>
+              <div class="step__p">Year/make/model + symptoms + any codes.</div>
+            </div>
+            <div class="step">
+              <div class="step__n">2</div>
+              <div class="step__t">Estimate first</div>
+              <div class="step__p">You get a price before work starts.</div>
+            </div>
+            <div class="step">
+              <div class="step__n">3</div>
+              <div class="step__t">Mobile visit</div>
+              <div class="step__p">I come to you when possible.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="wrap contact">
+          <div>
+            <h2>Contact</h2>
+            <p class="sub">Chula Vista and surrounding areas</p>
+          </div>
+
+          <!-- ONE contact block with ONE pair of buttons (final place they appear) -->
+          <div class="contact__box">
+            <div class="contact__number">
+              <a class="link link--big" href="tel:+18583236041">+1 (858) 323-6041</a>
+              <div class="contact__hint">Text is usually fastest.</div>
+            </div>
+            <div class="contact__actions">
+              <a class="btn btn--primary" href="sms:+18583236041">Text</a>
+              <a class="btn btn--ghost" href="tel:+18583236041">Call</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer class="footer">
       <div class="wrap footer__inner">
         <div>© <span id="y"></span> Ian’s Mobile Mechanic</div>
-        <div class="tiny subtle">Built on GitHub Pages</div>
+        <div class="muted">Built on GitHub Pages</div>
       </div>
     </footer>
 

@@ -1,6 +1,3 @@
-body { outline: 6px solid red !important; }
-
-
 :root{
   --bg:#0b0f14;
   --panel:#0f1620;
@@ -141,3 +138,8 @@ input:focus, textarea:focus{border-color: rgba(45,212,191,.45);box-shadow:0 0 0 
 
 .footer{border-top:1px solid var(--line);padding:18px 0;background: rgba(0,0,0,.16)}
 .footer__inner{display:flex;justify-content:space-between;align-items:center;gap:12px}
+
+.section--alt{
+  background: transparent !important;
+  border: 0 !important;
+}

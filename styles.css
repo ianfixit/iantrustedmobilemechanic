@@ -1,31 +1,22 @@
 :root{
   --bg:#0b0f14;
-  --panel:#0f1620;
-  --panel2:#0c121a;
   --text:#e7edf6;
   --muted:#a6b2c4;
+  --accent:#2dd4bf;
   --line:rgba(255,255,255,.10);
-
-  --accent:#2dd4bf;   /* teal */
-  --radius:16px;
-
-  --max:1100px;
+  --max:900px;
   --pad:24px;
   --font: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
 }
 
 *{box-sizing:border-box}
-html,body{height:100%}
 body{
   margin:0;
   font-family:var(--font);
-  background: var(--bg);
+  background:var(--bg);
   color:var(--text);
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
 }
 
-/* Layout */
 .wrap{
   max-width:var(--max);
   margin:0 auto;
@@ -36,24 +27,91 @@ body{
 .top{
   position:sticky;
   top:0;
-  z-index:50;
-  background: rgba(11,15,20,.92);
+  background:rgba(11,15,20,.95);
   border-bottom:1px solid var(--line);
-  backdrop-filter: blur(8px);
 }
 .top__inner{
   display:flex;
-  align-items:center;
   justify-content:space-between;
-  padding:14px 0; /* wrap handles left/right padding */
-}
-@media (max-width: 900px){
-  .top__inner{flex-direction:column;align-items:flex-start;gap:12px}
+  align-items:center;
+  padding:16px 0;
 }
 
-.brand{
-  display:flex;
-  align-items:center;
-  gap:12px;
+/* Typography */
+h1{
+  font-size:clamp(32px,4vw,44px);
+  margin:0 0 12px;
 }
-.bran
+h2{
+  font-size:22px;
+  margin:0 0 12px;
+}
+.lead{
+  color:var(--muted);
+  max-width:620px;
+  line-height:1.6;
+}
+
+/* Buttons */
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:12px 18px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  text-decoration:none;
+  font-weight:800;
+  color:var(--text);
+}
+.btn--primary{
+  background:var(--accent);
+  color:#081018;
+  border-color:transparent;
+}
+.btn--ghost{
+  background:transparent;
+}
+
+/* Sections */
+.hero{
+  padding:64px 0 56px;
+}
+.section{
+  padding:48px 0;
+}
+
+/* Lists */
+.list{
+  padding-left:18px;
+  color:var(--muted);
+}
+.list li{
+  margin:10px 0;
+}
+
+.steps-simple{
+  padding-left:18px;
+  color:var(--muted);
+}
+.steps-simple li{
+  margin:12px 0;
+}
+
+/* Contact */
+.contact-simple{
+  border-top:1px solid var(--line);
+}
+.contact-actions{
+  display:flex;
+  gap:12px;
+  margin-top:16px;
+  flex-wrap:wrap;
+}
+
+/* Footer */
+.footer{
+  border-top:1px solid var(--line);
+  padding:20px 0;
+  color:var(--muted);
+}

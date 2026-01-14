@@ -8,12 +8,12 @@
   --surface2: rgba(255,255,255,.03);
   --border: rgba(255,255,255,.10);
 
-  --text: #f2eadf;      /* creamy */
-  --muted:#c9bfb2;      /* warm muted */
-  --muted2:#a59b90;
+  --text: #e9f1fb;      /* creamy */
+  --muted:#b6c6da;      /* warm muted */
+  --muted2:#8fa6c2;
 
-  --accent:#e7c9a5;     /* warm sand */
-  --accentText:#14110d;
+  --accent:#4da3ff;     /* warm sand */
+  --accentText:#08131f;
 
   --radius: 18px;
   --max: 1100px;
